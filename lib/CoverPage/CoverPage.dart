@@ -1,19 +1,22 @@
+// ignore_for_file: use_build_context_synchronously, library_private_types_in_public_api, file_names
+
+// import 'package:first_app/Home/HomePage.dart';
 import 'package:flutter/material.dart';
 
 class CoverPage extends StatelessWidget {
   const CoverPage({Key? key}) : super(key: key);
 
-  static const titleText = 'First App';
-
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text(
-          titleText,
-          style: TextStyle(fontSize: 60),
+          child: SizedBox(
+        child: Icon(
+          Icons.home,
+          size: 140,
+          color: Color.fromARGB(134, 180, 42, 18),
         ),
-      ),
+      )),
     );
   }
 }
