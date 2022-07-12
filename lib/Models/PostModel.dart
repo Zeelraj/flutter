@@ -1,6 +1,4 @@
-// To parse this JSON data, do
-//
-//     final postModel = postModelFromJson(jsonString);
+// ignore_for_file: file_names
 
 import 'dart:convert';
 
