@@ -2,7 +2,7 @@
 
 import 'package:first_app/Models/PostModel.dart';
 import 'package:flutter/material.dart';
-import '../../data/constants.dart' as constants;
+import '../data/constants.dart' as constants;
 
 class Post extends StatefulWidget {
   final PostModel post;

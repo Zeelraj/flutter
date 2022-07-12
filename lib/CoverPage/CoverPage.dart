@@ -8,15 +8,17 @@ class CoverPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-          child: SizedBox(
-        child: Icon(
-          Icons.home,
-          size: 140,
-          color: Color.fromARGB(134, 180, 42, 18),
+    return Scaffold(
+      body: Container(
+        color: Colors.white,
+        child: const Center(
+          child: Icon(
+            Icons.home,
+            size: 140,
+            color: Color.fromARGB(134, 180, 42, 18),
+          ),
         ),
-      )),
+      ),
     );
   }
 }
