@@ -2,7 +2,8 @@
 
 import 'dart:developer';
 
-import 'package:first_app/Home/Components/PostsList.dart';
+import 'package:first_app/Post/AddPost.dart';
+import 'package:first_app/Post/PostsList.dart';
 import 'package:flutter/material.dart';
 import 'package:first_app/data/constants.dart' as constants;
 
@@ -17,14 +18,18 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // App Title Bar
       appBar: AppBar(
         title: const Text(constants.APP_NAME),
         backgroundColor: const Color.fromARGB(134, 180, 42, 18),
       ),
+      // App body
       body: const PostsList(),
+      // Floating Button
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          log('Add Post is Pressed..!!');
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const AddPost()));
         },
         backgroundColor: const Color.fromARGB(255, 180, 42, 18),
         tooltip: 'Add Post',

@@ -24,7 +24,7 @@ class PostModel {
   });
 
   // Fields
-  int userId;
+  dynamic userId;
   int id;
   String title;
   String body;

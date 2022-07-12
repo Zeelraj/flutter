@@ -1,6 +1,6 @@
 // ignore_for_file: file_names
 
-import 'package:first_app/Home/Components/Post.dart';
+import 'package:first_app/Post/Post.dart';
 import 'package:first_app/Models/PostModel.dart';
 import 'package:first_app/Services/Services.dart';
 import 'package:flutter/material.dart';
